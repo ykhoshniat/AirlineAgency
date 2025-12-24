@@ -63,7 +63,7 @@ public class Airline{
             }
             domains.get(i).sort(Comparator.comparingInt((Flight fl) -> fl.day).thenComparingInt(fl -> fl.price));
         }
-
+            System.out.println();
         assignment = new Flight[legs];
         startTimeNs = System.nanoTime();
         backtrack(0, null, 0, domains.get(0));
