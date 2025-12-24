@@ -13,4 +13,15 @@ public class Airline{
             return origin + " " + dest + " " + day + " " + price;
         }
     }
+    static int M;
+    static int minBudget, maxBudget;
+    static List<String> cities;
+    static int legs;
+    static int[] minStay, maxStay;
+    static List<List<Flight>> domains;   // تغییر داده شد
+
+    static Flight[] assignment;
+    static boolean solutionFound = false;
+    static long nodesVisited = 0;
+    static long startTimeNs;
 }
