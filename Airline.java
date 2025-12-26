@@ -18,7 +18,7 @@ public class Airline{
     static List<String> cities;
     static int legs;
     static int[] minStay, maxStay;
-    static List<List<Flight>> domains;   // تغییر داده شد
+    static List<List<Flight>> domains;  
 
     static Flight[] assignment;
     static boolean solutionFound = false;
@@ -50,7 +50,6 @@ public class Airline{
             allFlights.add(new Flight(f[0], f[1], Integer.parseInt(f[2]), Integer.parseInt(f[3])));
         }
 
-        // به جای آرایه، لیست تو در تو
         domains = new ArrayList<>();
         for (int i = 0; i < legs; i++) {
             domains.add(new ArrayList<>());
